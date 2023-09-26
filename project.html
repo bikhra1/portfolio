@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <!--  jb 1 sa ziada styleshee use kro tab element phla aata ha us ki stylesheet phla likhni ha 
+    jasa nav bar phla aata ha is lis us ki stylesheet phla ha aur portfolio.css us k neecha yani badma likhi ha   -->
+
+    <link rel="stylesheet" href="navbar.css">
+
+    <link rel="stylesheet" href="project.css">
+    
+</head>
+
+<body>
+
+  <header class="header">
+    <!-- Logo -->
+    <a href="#" class="logo">LOGO</a>
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Menu -->
+    <nav class="nav">
+        <ul class="menu">
+            <li> <a class="Home"    href="./portFolio.html"   > Home </a></li>
+            <li><a  class="About"  href="./about.html"       > About </a> </li>
+            <li><a  class="Projects" href="./project.html" > Projects </a></li>
+            <li><a  class="Contact"  href="./contact.html"   > Contact </a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+    <section class="projects container " id="projects">
+      <div class="project-header">
+        <h2 class="secondery-title">Projects</h2>
+      </div>
+
+      <div class="project-tabsproject-tabs">
+        <button class="project-tab-item project-tab-item-active" id="all">
+          All
+        </button>
+        <button class="project-tab-item" id="design">Design</button>
+        <button class="project-tab-item" id="seo">SEO</button>
+        <button class="project-tab-item" id="ui-ux">UI/UX</button>
+      </div>
+
+      <div class="project-grid grid">
+        <div class="project-grid-item grid-item all design">
+          <img src="./asset/b-1.jpg" alt="" />
+        </div>
+        <div class="project-grid-item grid-item all design">
+          <img src="./asset/b-2.jpg" alt="" />
+        </div>
+        <div class="project-grid-item grid-item all seo">
+          <img src="./asset/b-3.jpg" alt="" />
+        </div>
+        <div class="project-grid-item grid-item all seo">
+          <img src="./asset/b-4.jpg" alt="" />
+        </div>
+        <div class="project-grid-item grid-item all ui-ux">
+          <img src="./asset/b-5.jpg" alt="" />
+        </div>
+        <div class="project-grid-item grid-item all ui-ux">
+          <img src="./asset/b-6.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+    
+          <p class="copyright">
+            &copy; 2023 <a href=" " class="copyright-link">Portfolio</a>. All Rights Reseverd
+          </p>
+    
+          <ul class="footer-list">
+            <li>
+              <a href=" " class="footer-link">Terms & Condition</a>
+            </li>
+    
+            <li>
+              <a href=" " class="footer-link">Privacy Policy</a>
+            </li>
+          </ul>
+    
+        </div>
+      </footer>
+
+
+
+
+
+    <script src="./project.js"></script>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Full stack developer',],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+
+</html>

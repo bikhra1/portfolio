@@ -1,0 +1,553 @@
+
+
+
+body{
+    
+    background-color: #1f242d;
+    color: white;
+}
+
+.main
+{ /* border: 5px solid rgb(243, 106, 106);*/
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:40px;
+    /*border: 5px solid red;*/
+}
+
+
+
+
+
+.glitch-wrapper {
+   
+    display: flex;
+    align-items: center;
+ 
+ }
+ 
+ .glitch {
+    position: relative;
+    font-size: 37px;
+    font-weight: bold;
+    color: #FFFFFF;
+   /*color: black;*/
+    letter-spacing: 3px;
+    
+ }
+ 
+ .glitch:before,
+ .glitch:after {
+    display: block;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+ }
+ 
+ .glitch:before {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #00FFFF;
+    z-index: -1;
+ }
+ 
+ .glitch:after {
+    animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #FF00FF;
+    z-index: -2;
+ }
+ 
+ @keyframes glitch-it {
+    0% {
+       transform: translate(0);
+    }
+    20% {
+       transform: translate(-2px, 2px);
+    }
+    40% {
+       transform: translate(-2px, -2px);
+    }
+    60% {
+       transform: translate(2px, 2px);
+    }
+    80% {
+       transform: translate(2px, -2px);
+    }
+    to {
+       transform: translate(0);
+    }
+ }
+
+
+
+
+.main p{
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    line-height: 1.8;
+    
+}
+
+
+.main .text{
+   
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+
+.main .text .subt{
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: -7px;
+    
+    
+}
+.subt span{
+    color: aquamarine;
+}
+
+#element{
+    font-size: 25px;
+    font-weight: 700;
+    color: aquamarine;
+}
+
+
+.main .text .random-lines{
+    margin-left: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+
+.text .random-lines1{
+    
+    width: 200px;
+    height: 200px;
+    margin-top: 3%;
+    float: left;
+   
+    
+}
+
+
+.text .curved-arrow{
+    position: relative;
+    transform: rotate(90deg);
+    margin-left: 100%;
+    margin-top: -40%;
+    z-index: -1;
+    height: 300px;
+    width: 100px;
+    
+    
+}
+/* /////////////////////////////////////// */
+
+@media only screen and (max-width: 1697px) {
+    
+.text .curved-arrow{
+
+    margin-left: 90%;
+}
+  }
+
+  
+@media only screen and (max-width: 1539px) {
+
+    .main p{
+        
+        margin-top: -0.75rem;
+        
+    }
+      }
+
+
+      @media only screen and (max-width: 1308px) {
+
+        .main p{
+            
+            margin-top: -40px;
+            
+        }
+          }
+    
+    @media only screen and (max-width: 1251px) {
+
+            
+.text .curved-arrow{
+
+    display: none;
+}
+
+.main p{
+            
+    margin-top: 50px;
+    
+}
+  
+              }
+
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+
+ @media only screen and (max-width: 1152px) {
+
+
+
+    .main
+    { /* border: 5px solid rgb(243, 106, 106);*/
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        
+    }
+   
+.main .text{
+   
+    margin-left: 10%;
+    
+}
+.button{
+  margin-top: 20px;
+  margin-left: -250px;
+
+}
+
+
+ }
+
+
+
+              
+
+
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+
+
+#wrapp{
+    margin-left:10% ;
+
+}
+
+#wrapp .shadow{
+    position: absolute;
+    width: 400px ;
+    height :580px;
+     background-color: #808080;
+     border: 5px solid black;
+     z-index: -1;
+     margin-top:70px;
+     margin-left: 30px;
+}
+
+#wrapp img{
+    margin-top:50px;
+    position: relative;
+    width: 400px ;
+     height :auto;
+}
+
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+
+@media only screen and (max-width: 1152px) {
+
+
+   
+#wrapp{
+    margin-left:25% ;
+
+}
+
+
+ }
+
+
+
+ 
+ @media only screen and (max-width: 629px) {
+
+
+  .button{
+  
+  margin-left: 0px;
+  
+  }
+
+
+  
+#wrapp{
+    margin-left:10% ;
+
+}
+
+  
+  
+  
+  }
+
+
+
+
+  
+ @media only screen and (max-width: 513px) {
+
+
+  .button{
+  
+  margin-top: -70px;
+  margin-left: -170px;
+  
+  }
+
+
+  
+#wrapp{
+    margin-left:5% ;
+
+}
+
+ }
+  
+  
+
+              
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+
+
+/*  button */
+
+ button{
+    margin-left: 30%;
+    background-color: rgb(12, 158, 110);
+    border: none;
+    text-decoration: none;
+    padding: 1rem 1.75rem;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 300;
+    transition: .4s;
+    cursor: pointer;
+
+}
+
+button:hover{
+
+    
+    box-shadow: 0 15px 24px hsla(160, 100%, 70%, 5);
+}
+
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+
+/*-----------------------------------*\
+  #SKILLS
+\*-----------------------------------*/
+
+
+
+
+.under{
+    margin-top: 5px;
+    /*border: 5px solid blue;*/
+    height: 500px;
+    width: 100%;
+    background-color:  #252a33;
+    
+}
+
+
+
+.skills .section-subtitle{
+    color: rgb(234, 110, 21);
+    font-weight: 700;
+    font-size: 30px;
+   
+}
+
+.container .section-subtitle{
+    margin-left: 50%;
+}
+.container .section-title{
+    margin-left: 40%;
+    font-weight: 800;
+    font-size: 40px;
+     margin-block-end: 20px;}
+
+.container .section-text{
+    margin-left: 35%;
+    color: #808080;
+    margin-block-end: 70px;
+}
+
+
+
+
+  
+@media only screen and (max-width: 1098px) {
+
+
+  .container .section-subtitle{
+    margin-left: 45%;
+}
+
+.container .section-title{
+  margin-left: 25%;
+  }
+
+.container .section-text{
+  margin-left: 25%;
+  
+}
+
+  
+  }
+
+
+
+
+
+
+
+  
+@media only screen and (max-width: 513px) {
+
+
+  .container .section-subtitle{
+    margin-left: 40%;
+}
+
+.container .section-title{
+  margin-left: 20%;
+  }
+
+.container .section-text{
+  margin-left: 20%;
+  
+}
+
+  
+  }
+
+
+
+.skills-list {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px; 
+  gap: 25px;
+}
+
+.skills-item .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 10px;
+}
+
+.skills-title,
+.skills-data {
+  color: white;
+  font-size: 16px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+}
+
+.skills-progress-box {
+  background-color: white;
+  height: 8px;
+  border-radius: 10px;
+}
+
+.skills-progress {
+  background-color:aquamarine;
+  height: 100%;
+  border-radius: inherit;
+}
+
+
+
+
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+/* /////////////////////////////////////// */
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer {
+    background-color:  hsl(225, 24%, 27%);;
+    padding-block: 60px;
+  }
+  
+.footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.container a{
+    text-decoration: none;
+    color: hsl(254, 7%, 65%);
+}
+
+  .copyright {
+    max-width: max-content;
+    margin-inline: auto;
+    margin-block-end: 10px;
+    font-size: 20px;
+  }
+  
+  .copyright-link {
+    display: inline-block;
+    transition:  hsl(225, 24%, 27%);;
+    font-weight: 600;
+  }
+  
+  .copyright-link:is(:hover, :focus)
+   {
+     color: white; 
+    }
+  
+  .footer-list {
+    max-width: max-content;
+    margin-inline: auto;
+  }
+  
+  .footer-list * { 
+    display: inline-block;
+ }
+  
+  .footer-list > li:not(:last-child) {
+     margin-inline-end: 40px;
+     }
+  
+  .footer-link {
+     transition: 0.25s ease;;
+     }
+  
+  .footer-link:is(:hover, :focus) { 
+    color: white;
+ }
+  
+  
+  
+  

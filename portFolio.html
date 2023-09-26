@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <!--  jb 1 sa ziada styleshee use kro tab element phla aata ha us ki stylesheet phla likhni ha 
+    jasa nav bar phla aata ha is lis us ki stylesheet phla ha aur portfolio.css us k neecha yani badma likhi ha   -->
+
+    <link rel="stylesheet" href="./navbar.css">
+
+    <link rel="stylesheet" href="./portFolio.css">
+    
+</head>
+
+<body>
+<!--
+    <header>
+        <div class="logo">
+            <a href="#" class="a-logo" >Logo</a>
+        </div>
+        
+        <div id="hamm" >
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+      </div>
+
+        <nav class="nav-bar"  id="nav">
+           <a class="Home"    href="./portFolio.html"   > Home </a>
+           <a  class="About"  href="./about.html"       > About </a>
+           <a  class="Projects" href="./project.html" > Projects </a>
+           <a  class="Contact"  href="./contact.html"   > Contact </a>
+
+        </nav>
+        
+
+    </header>
+
+  -->
+
+  <header class="header">
+    <!-- Logo -->
+    <a href="#" class="logo">LOGO</a>
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Menu -->
+    <nav class="nav">
+        <ul class="menu">
+            <li> <a class="Home"    href="./portFolio.html"   > Home </a></li>
+            <li><a  class="About"  href="./about.html"       > About </a> </li>
+            <li><a  class="Projects" href="./project.html" > Projects </a></li>
+            <li><a  class="Contact"  href="./contact.html"   > Contact </a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="main ">
+        <div class="text"> 
+            
+            <img  class="random-lines1" src="./asset/random-lines.svg" alt="">
+
+            <h3 class="subt">
+                Hello👋<span> I'm </span> 
+
+            </h3>
+           
+           
+
+            <div class="glitch-wrapper">
+                <div class="glitch" data-text="Ronald Luei">Ronald Luei</div>
+             </div>
+
+            <span id="element"></span>
+
+             <img  class="curved-arrow" src="./asset/curved-arrow.svg" alt="">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, eum autem facere 
+                sapiente earum consequuntur, vel error distinctio temporibus saepe sunt nulla maxime
+                 dicta vero eius expedita quibusdam ipsum? Iste?
+            </p>
+
+            <img  class="random-lines" src="./asset/random-lines.svg" alt="">
+            
+          
+
+        </div>
+
+
+        <div class="immage" >
+            
+
+            <div id="wrapp">
+                
+                <div class="shadow"></div>
+            <img src="/full-stack-projects/portfolio/asset/home-perfil.jpg" alt="">
+           
+           
+            </div>
+        
+        </div>
+        <div class="button">
+            <button  onclick="myFunction()">Read more</button>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="under" id="sec2" >
+            <!--- #SKILLS-->
+
+      <section class="section skills" id="skills">
+        <div class="container">
+
+          <p class="section-subtitle">My Skills</p>
+
+          <h2 class="h2 section-title">I Develop Skills Regularly</h2>
+
+          <p class="section-text">
+            Dliquip ex ea commo do conse namber onequa ute irure dolor in reprehen derit in voluptate
+          </p>
+
+          <ul class="skills-list">
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 95%">
+                <h3 class=" skills-title">CSS</h3>
+
+                <data class="skills-data" value="95">95%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 95%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 75%">
+                <h3 class="skills-title">React</h3>
+
+                <data class="skills-data" value="75">75%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 75%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 90%">
+                <h3 class="skills-title">MongoDB</h3>
+
+                <data class="skills-data" value="90">90%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 90%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 70%">
+                <h3 class="skills-title">Python</h3>
+
+                <data class="skills-data" value="70">70%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 70%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 80%">
+                <h3 class="skills-title">PHP</h3>
+
+                <data class="skills-data" value="80">80%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 80%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 75%">
+                <h3 class="skills-title">JavaScript</h3>
+
+                <data class="skills-data" value="75">75%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 75%"></div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+    
+          <p class="copyright">
+            &copy; 2023 <a href=" " class="copyright-link">Portfolio</a>. All Rights Reseverd
+          </p>
+    
+          <ul class="footer-list">
+            <li>
+              <a href=" " class="footer-link">Terms & Condition</a>
+            </li>
+    
+            <li>
+              <a href=" " class="footer-link">Privacy Policy</a>
+            </li>
+          </ul>
+    
+        </div>
+      </footer>
+
+
+
+
+     
+    <script src="./portFolio.js"></script>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Full stack developer',],
+          typeSpeed: 70,
+          backSpeed:70,
+          loop:true,
+        });
+      </script>
+</body>
+
+</html>

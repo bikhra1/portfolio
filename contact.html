@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <!--  jb 1 sa ziada styleshee use kro tab element phla aata ha us ki stylesheet phla likhni ha 
+    jasa nav bar phla aata ha is lis us ki stylesheet phla ha aur portfolio.css us k neecha yani badma likhi ha   -->
+
+    <link rel="stylesheet" href="navbar.css">
+
+    <link rel="stylesheet" href="contact.css">
+    
+</head>
+
+<body>
+
+  <header class="header">
+    <!-- Logo -->
+    <a href="#" class="logo">LOGO</a>
+    <!-- Hamburger icon -->
+    <input class="side-menu" type="checkbox" id="side-menu"/>
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+    <!-- Menu -->
+    <nav class="nav">
+        <ul class="menu">
+            <li> <a class="Home"    href="./portFolio.html"   > Home </a></li>
+            <li><a  class="About"  href="./about.html"       > About </a> </li>
+            <li><a  class="Projects" href="./project.html" > Projects </a></li>
+            <li><a  class="Contact"  href="./contact.html"   > Contact </a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+    <div class="main ">
+      
+    </div>
+
+
+
+ <!-- //////////////////////////////////-->
+
+ <div class="title" >Lets Connect </div>
+ <div    class="contact">
+
+                  
+              <div class="svg">
+                <span class="contact__illustration">
+                 <img src="./asset/connect.svg" alt="Group of people connecting with each other"/>
+                </span>
+             </div>
+
+
+
+  <div class="form">
+    
+    <div class="container">
+      <!-- left side -->
+      <div class="left-side">
+        <img src="img/contact.png" alt="" />
+      </div>
+      <!-- right side -->
+      <div class="right-side">
+        <h2>Tell me more about your project!</h2>
+        <div class="form">
+          <label for="name">Name:</label>
+          <input type="text" name="name" id="name" placeholder="Type your name here" />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Your email address here" />
+          <label for="email">Messages:</label>
+          <textarea name="message" id="message" cols="50" rows="10" placeholder="Message"></textarea>
+        </div>
+
+        <button class="btn">Send Message</button>
+      </div>
+    </div>
+    
+</div>
+
+ </div>
+ 
+
+
+ <!-- //////////////////////////////////-->
+
+ <!-- //////////////////////////////////-->
+
+
+    <footer class="footer">
+        <div class="container">
+    
+          <p class="copyright">
+            &copy; 2023 <a href=" " class="copyright-link">Portfolio</a>. All Rights Reseverd
+          </p>
+    
+          <ul class="footer-list">
+            <li>
+              <a href=" " class="footer-link">Terms & Condition</a>
+            </li>
+    
+            <li>
+              <a href=" " class="footer-link">Privacy Policy</a>
+            </li>
+          </ul>
+    
+        </div>
+      </footer>
+
+
+
+
+
+    <script src="./"></script>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Full stack developer',],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+
+</html>
